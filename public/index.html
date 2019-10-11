@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BILDerkennung!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
 
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                BILDerkennung
+            </h1>
+            <p class="subtitle">
+                Are you ready for <strong>BILD</strong>?
+            </p>
+        </div>
+    </section>
+
     <form action="/api/classify" id="usrform" method="POST">
-        <textarea type="text" name="inputtext" ></textarea>
+        <textarea type="text" name="inputtext"></textarea>
         <br>
         <input type="submit">
     </form>
 
 </body>
+
 </html>
