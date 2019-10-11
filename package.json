@@ -5,21 +5,21 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "ci": "npm start & wait-on http://localhost:8080 & npm test"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/c-koerner/ClassifierWebApp.git"
+    "type": "git"
   },
+  
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/c-koerner/ClassifierWebApp/issues"
-  },
-  "homepage": "https://github.com/c-koerner/ClassifierWebApp#readme",
+
   "dependencies": {
     "bayes": "0.0.7",
     "bulma": "^0.7.5",
-    "express": "^4.17.1"
+    "cypress": "^3.4.1",
+    "express": "^4.17.1",
+    "wait-on": "^3.3.0"
   }
 }
