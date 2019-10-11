@@ -1,4 +1,4 @@
-#bild3rkennung
+# BILDerkennung
 ### A small project created during the Axel Springer Bootcamp.
 Find out if your article is identified as a **BILD** article or **NOT**
 
